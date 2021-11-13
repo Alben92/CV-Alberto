@@ -1,0 +1,352 @@
+/* FUENTES */
+@font-face{
+    font-family: "Lato-Bold";
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face{
+    font-family: "Lato-Italic";
+    src: url("../fonts/Lato-Italic.ttf");
+}
+
+@font-face{
+    font-family: "Lato-Light";
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face{
+    font-family: "Lato-LightItalic";
+    src: url("../fonts/Lato-LightItalic.ttf");
+}
+
+@font-face{
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+html,body{
+    height: 100%;
+    font-family: Lato-Regular;
+    color: #161616;
+    background-color: #EEEEEE;
+}
+
+.container{
+    width: 80%;
+    margin: 2% auto;
+    background-color: #0B0B0B;
+    display: block;
+    padding: 5%;
+    border-radius: 20px;
+    border-top: 10px solid #0ea3e3 ;
+    color: #ffffff;
+}
+
+/* HEADER */
+
+.bloqueHeaderFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.bloqueTextosHeader{
+    width: 30%;
+}
+
+.NombreHeader{
+    font-family: Lato-Bold;
+    font-size: 2.4em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.PuestoHeader{
+    font-family: Lato-Bold;
+    font-size: 1.7em;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.BarraHeader{
+    width: 95%;
+    display: block;
+    height: 4px;
+    background-color: #0ea3e3;
+}
+
+.bloqueImagenHeader{
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.imagenPrincipalHeader{
+    width: 60%;
+    border-radius: 50%;
+    z-index: 3;
+    border: 4px solid #0ea3e3;
+    transition: 0.1s ease-in;
+}
+
+.imagenPrincipalHeader:hover{
+    width: 62%;
+    border: 4px solid #ffffff;
+}
+
+.bloqueRRSSHeader{
+    width: 30%;
+}
+
+.ContactoRRSS{
+    width: 100%;
+    margin: 3% 0%;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid #0ea3e3;
+    background-color: #0B0B0B;
+    transition: 0.2s ease-in;
+}
+
+.ContactoRRSS a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.ContactoRRSS:hover{
+    border: 2px solid #ffffff;
+    background-color: #0ea3e3;
+    width: 105%;
+}
+
+.ContactoRRSS:hover .iconoRRSS{
+    color: #0ea3e3;
+}
+
+.ContactoRRSS:hover .iconoRRSS::before{
+    background: #ffffff;
+}
+
+.ContactoRRSS i{
+    color: #ffffff;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: 0.2s ease-in;
+}
+
+.ContactoRRSS i::before{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background: #0ea3e3;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+
+.ContactoRRSS p{
+    font-size: 1em;
+    font-family: Lato-Light;
+    color: #ffffff;
+}
+
+/* MAIN */
+#main{
+    margin-top: 5%;
+}
+
+#sobreMi, #Experiencia, #Educacion, #Competencias, #Idiomas{
+    margin-bottom: 5%;
+}
+
+.tituloMain{
+    font-size: 1.5em;
+    font-family: Lato-Bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tituloMain::after{
+    content: '';
+    width: 20%;
+    height: 4px;
+    background-color: #0ea3e3;
+    display: block;
+    margin-top: 10px;
+}
+
+.sobremi{
+    font-family: Lato-Light;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.Trabajos, .Cursos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.Experiencia, .cursoRealizado{
+    width: 45%;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid #0ea3e3;
+    background-color: #0B0B0B;
+    transition: 0.2s ease-in;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+.Experiencia{
+    height: 420px;
+}
+
+.cursoRealizado{
+    height: 260px;
+}
+
+.Experiencia img, .cursoRealizado img{
+    width: 15%;
+    padding: 2%;
+    background-color: #ffffff;
+    border: 2px solid #0ea3e3;
+    border-radius: 20px 0 20px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.tituloExperiencia, .tituloCurso{
+    font-family: Lato-Bold;
+    font-size: 1.2em;
+    color: #0ea3e3;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    line-height: 1.5;
+}
+
+.NombreEmpresa, .CentroCurso{
+    font-family: Lato-Regular;
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 1%;
+    margin-top: 2%; 
+}
+
+.LugarTrabajo{
+    font-family: Lato-Italic;
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 1%;
+    margin-top: 2%; 
+}
+
+.TiempoTrabajo, .tiempoCurso{
+    font-family: Lato-Italic;
+    font-size: 1em;
+    color: #0ea3e3;
+}
+
+.ListadoExperiencia{
+    padding: 0px;
+    margin-left: 10px;
+    list-style: none;
+    font-family: Lato-Light;
+    font-size: 1.2em;
+
+}
+
+.ListadoExperiencia li{
+    margin-bottom: 10px;
+}
+
+.ListadoExperiencia li::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #0ea3e3;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.CompetenciasGrupo, .IdiomaGrupo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Competencias, .Idiomas{
+    width: 28%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 1%;
+    border: 2px solid #0ea3e3;
+    border-radius: 20px 0 20px 0;
+    transition: 0.2s ease-in;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+.tituloCompetencias{
+    font-family: Lato-Light;
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.barras{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.barra{
+    width: 80%;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 4px;
+    margin-top: 4%;
+}
+
+.barra::after{
+    width: 50%;
+    height: 8px;
+    background-color: #0ea3e3;
+    content: '';
+    position: relative;
+    top: -19px;
+    left: 0;
+    display: block;
+    padding: 2px;
+}
+
+.barras span{
+    margin-bottom: 2px;
+}
