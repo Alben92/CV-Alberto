@@ -57,11 +57,27 @@ html,body{
 
 .NombreHeader{
     font-family: Lato-Bold;
+    width: 100%;
+    overflow: hidden;
     font-size: 2.4em;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.NombreHeader span{
+    opacity: 1;
+    background: #ffffff;
+    font-weight: 100;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .PuestoHeader{
@@ -152,7 +168,7 @@ html,body{
     align-items: center;
     background: #0ea3e3;
     border-radius: 50%;
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
 }
 
 .ContactoRRSS p{
@@ -208,9 +224,15 @@ html,body{
     border-radius: 20px 0 20px 0;
     border: 2px solid #0ea3e3;
     background-color: #0B0B0B;
-    transition: 0.2s ease-in;
     padding: 2%;
     margin: 2% 0;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.Experiencia:hover, .cursoRealizado:hover{
+    background-color: #ffffff;
+    transition: 0.1s ease-in;
 }
 
 .Experiencia{
@@ -231,6 +253,7 @@ html,body{
     margin: 0 auto;
 }
 
+
 .tituloExperiencia, .tituloCurso{
     font-family: Lato-Bold;
     font-size: 1.2em;
@@ -241,6 +264,15 @@ html,body{
     line-height: 1.5;
 }
 
+.Experiencia:hover .tituloExperiencia, 
+.Experiencia:hover .NombreEmpresa, 
+.Experiencia:hover .LugarTrabajo, 
+.Experiencia:hover .ListadoExperiencia,
+.cursoRealizado:hover .tituloCurso, 
+.cursoRealizado:hover .CentroCurso{
+    color: #0B0B0B;
+}
+
 .NombreEmpresa, .CentroCurso{
     font-family: Lato-Regular;
     font-size: 1em;
@@ -249,6 +281,7 @@ html,body{
     margin-bottom: 1%;
     margin-top: 2%; 
 }
+
 
 .LugarTrabajo{
     font-family: Lato-Italic;
@@ -307,6 +340,13 @@ html,body{
     transition: 0.2s ease-in;
     padding: 2%;
     margin: 2% 0;
+    background-color: #0B0B0B;
+}
+
+.Competencias:hover, .Idiomas:hover{
+    transition: 0.2s ease-in;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
 .tituloCompetencias{
@@ -335,18 +375,35 @@ html,body{
     margin-top: 4%;
 }
 
-.barra::after{
-    width: 50%;
+.html, .Photoshop, .UXUI, .Angular, .Javascript, .SeoSem, .Espanol, .frances, .ingles{
+    width: 0%;
     height: 8px;
     background-color: #0ea3e3;
     content: '';
     position: relative;
-    top: -19px;
+    top: -1px;
     left: 0;
     display: block;
     padding: 2px;
 }
 
+.Competencias:hover .tituloCompetencias,
+.Idiomas:hover .tituloCompetencias,
+.Competencias:hover .barras span,
+.Idiomas:hover .barras span{
+    color: #0B0B0B;
+}
+
+.Competencias:hover .barra,
+.Idiomas:hover .barra{
+    border: 1px solid #0ea3e3;
+}
+
 .barras span{
     margin-bottom: 2px;
+}
+
+.Fade-In{
+    opacity: 0;
+    transition: opacit 250ms ease-in;
 }
