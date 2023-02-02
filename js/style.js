@@ -46,6 +46,7 @@ $(document).ready(function(){
                 $('.UXUI').animate({'width': 80+'%'},800);
                 $('.Angular').animate({'width': 75+'%'},800);
                 $('.Javascript').animate({'width': 85+'%'},800);
+				$('.Liferay').animate({'width': 80+'%'},800);
                 $('.SeoSem').animate({'width': 75+'%'},800);
                 $('.Espanol').animate({'width': 100+'%'},800);
                 $('.frances').animate({'width': 85+'%'},800);
